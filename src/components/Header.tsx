@@ -40,7 +40,7 @@ const Header = () => {
           ))}
           <a
             href="#book"
-            className="px-3 py-1 bg-gold text-white rounded hover:bg-opacity-90 transition"
+            className="px-3 py-1 bg-gold text-white rounded hover:!bg-[#b38600] transition"
           >
             Book Now
           </a>
@@ -111,7 +111,7 @@ const Header = () => {
           ))}
           <a
             href="#book"
-            className="py-2 px-4 bg-gold text-white text-center rounded hover:bg-opacity-90 transition"
+            className="py-2 px-4 bg-gold text-white text-center rounded hover:!bg-[#b38600] transition"
             onClick={closeMenu}
           >
             Book Now

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useTheme } from "./context/ThemeContext";
 import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
 
 function App() {
   const { theme } = useTheme();
@@ -45,6 +46,7 @@ function App() {
   return (
     <>
       <Header />
+      <HeroSection />
     </>
   );
 }
