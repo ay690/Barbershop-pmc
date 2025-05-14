@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useTheme } from "./context/ThemeContext";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
+import ServicesSection from "./components/Services";
 
 function App() {
   const { theme } = useTheme();
@@ -47,6 +48,7 @@ function App() {
     <>
       <Header />
       <HeroSection />
+      <ServicesSection />
     </>
   );
 }

@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap");
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --color-gold: #FFD700;
+  --color-gold: #ffd700;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -78,7 +80,7 @@
 }
 
 .dark {
-  --color-gold: #E6C200;
+  --color-gold: #e6c200;
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
@@ -127,5 +129,32 @@
   }
   .bg-gold {
     background-color: var(--color-gold) !important;
+  }
+}
+
+@layer components {
+  .menu-transition {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .service-card,
+  .testimonial-card,
+  .gallery-item,
+  .contact-form input,
+  .contact-form textarea {
+    transition: all 0.3s ease;
+  }
+
+  .fade-in {
+    animation: fadeIn 0.5s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
