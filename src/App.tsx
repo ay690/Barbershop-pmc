@@ -6,6 +6,7 @@ import ServicesSection from "./components/Services";
 import GallerySection from "./components/Gallery";
 import AboutSection from "./components/AboutSection";
 import TestimonialsSection from "./components/Testimonials";
+import BookingSection from "./components/BookingSection";
 
 function App() {
   const { theme } = useTheme();
@@ -55,6 +56,7 @@ function App() {
       <GallerySection />
       <TestimonialsSection />
       <AboutSection />
+      <BookingSection />
     </>
   );
 }
