@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { galleryItems } from "@/data/gallery";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const GallerySection = () => {
   const [fadeIn, setFadeIn] = useState(false);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,21 +40,25 @@ const GallerySection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+          className={`grid ${
+            isMobile ? "grid-cols-1" : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+          } gap-6`}
+        >
           {galleryItems.map((item, index) => (
             <div
               key={index}
               className={`overflow-hidden rounded-lg shadow-md hover:shadow-xl transform transition-all duration-500 ease-out ${
-                fadeIn
-                  ? "fade-in opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-5"
+                fadeIn ? "fade-in opacity-100 translate-y-0" : "opacity-0 translate-y-5"
               }`}
               style={{ transitionDelay: `${index * 0.15}s` }}
             >
               <img
                 src={item.image}
                 alt={item.alt}
-                className="w-full h-80 object-cover hover:scale-105 transition-transform duration-300"
+                className={`w-full object-cover transition-transform duration-300 hover:scale-105 ${
+                  isMobile ? "h-60" : "h-80"
+                }`}
               />
             </div>
           ))}
