@@ -35,7 +35,7 @@ const Header = () => {
         {/* Desktop Nav */}
         {!isMobile && (
           <nav className="hidden md:flex space-x-8">
-            {["home", "services", "gallery", "about", "contact"].map((sec) => (
+            {["home", "services", "gallery", "pricing", "about", "contact"].map((sec) => (
               <a
                 key={sec}
                 href={`#${sec}`}

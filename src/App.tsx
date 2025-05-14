@@ -9,6 +9,7 @@ import TestimonialsSection from "./components/Testimonials";
 import BookingSection from "./components/BookingSection";
 import ContactSection from "./components/Contact";
 import Footer from "./components/Footer";
+import PricingSection from "./components/PricingSection";
 
 function App() {
   const { theme } = useTheme();
@@ -58,6 +59,7 @@ function App() {
       <GallerySection />
       <TestimonialsSection />
       <AboutSection />
+      <PricingSection />
       <BookingSection />
       <ContactSection />
       <Footer />

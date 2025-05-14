@@ -17,7 +17,7 @@ export const galleryItems: GalleryItem[] = [
     alt: "Elegant barber shop interior"
   },
   {
-    image: "https://pixabay.com/get/g135eec1b67c2a2bf668d1df60097fc8dbe3ca636125841de5e157faaa8a021eae3839d832f31cb4d2147ae9c048b7cec3e07f03a1a3bfd8f713dfe0f8e3d7bb8_1280.jpg",
+    image: "https://images.pexels.com/photos/1319459/pexels-photo-1319459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     alt: "Traditional straight razor shave"
   },
   {
@@ -25,7 +25,7 @@ export const galleryItems: GalleryItem[] = [
     alt: "Modern pompadour style"
   },
   {
-    image: "https://pixabay.com/get/g43075a0780388c390a5870c15237005a1e2cb699e365d5b5ea7c616c9b28510ad8bdebd217d0b466457abadd3aa3c31583444fdaf663030a202d266351678565_1280.jpg",
+    image: "https://media.istockphoto.com/id/1007175546/photo/top-view-of-set-of-various-professional-barber-tools-in-hair-salon.jpg?s=612x612&w=0&k=20&c=yJx_qAXExqTFBOFbIJgRZkpgqJM8nQhmz6u1GOTssLE=",
     alt: "Professional barber tools"
   }
 ];

@@ -8,7 +8,7 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <img
-              src="https://pixabay.com/get/g72977ff5980b4b40cc32e444716e8784a0a19a91d931e19b33d2e65073fd8546987ec952e9f1fe974f119c35ceaaf43d75944e90ebf76b90724731204fd63a17_1280.jpg"
+              src="https://pmcbarber.devfrend.com/images/pmcbarber/hero.webp"
               alt="Master Barber at PMC"
               className="rounded-lg shadow-lg w-full h-auto"
             />
