@@ -9,6 +9,7 @@ import TestimonialsSection from "./components/Testimonials";
 import BookingSection from "./components/BookingSection";
 import ContactSection from "./components/Contact";
 import Footer from "./components/Footer";
+import FAQSection from "./components/FAQ";
 import PricingSection from "./components/PricingSection";
 
 function App() {
@@ -61,6 +62,7 @@ function App() {
       <AboutSection />
       <PricingSection />
       <BookingSection />
+      <FAQSection />
       <ContactSection />
       <Footer />
     </>
