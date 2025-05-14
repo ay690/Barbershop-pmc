@@ -11,6 +11,7 @@ import ContactSection from "./components/Contact";
 import Footer from "./components/Footer";
 import FAQSection from "./components/FAQ";
 import PricingSection from "./components/PricingSection";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const { theme } = useTheme();
@@ -63,6 +64,7 @@ function App() {
       <PricingSection />
       <BookingSection />
       <FAQSection />
+      <ScrollToTop />
       <ContactSection />
       <Footer />
     </>
