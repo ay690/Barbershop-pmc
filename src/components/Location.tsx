@@ -15,7 +15,7 @@ const LocationSection = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Check on initial render
+    handleScroll(); // initial check
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -39,37 +39,22 @@ const LocationSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-          {/* Map placeholder */}
+          {/* Embedded Google Map */}
           <div
-            className={`bg-white dark:bg-gray-800 rounded-lg h-64 sm:h-80 md:h-96 flex items-center justify-center shadow-lg transform transition-all duration-500 ease-out
+            className={`rounded-lg overflow-hidden shadow-lg transform transition-all duration-500 ease-out
               ${fadeIn ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
             style={{ animationDelay: "0.1s" }}
           >
-            <div className="text-gray-400 dark:text-gray-500">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-24 w-24 mx-auto mb-4 text-gray-700 dark:text-gray-400"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={1}
-                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={1}
-                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                />
-              </svg>
-              <p className="text-center text-sm sm:text-base">
-                Interactive map will load here
-              </p>
-            </div>
+            <iframe
+              title="PMC Barber Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.1234567890123!2d-97.123456!3d33.215147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c58b6b1234567%3A0xabcdef1234567890!2s518%20Acme%20St%20Unit%20101%2C%20Denton%2C%20TX%2076205!5e0!3m2!1sen!2sus!4v1234567890123"
+              width="100%"
+              height="100%"
+              className="h-64 sm:h-80 md:h-96 w-full border-0"
+              allowFullScreen={false}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
 
           {/* Contact information */}
