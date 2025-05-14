@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import FAQSection from "./components/FAQ";
 import PricingSection from "./components/PricingSection";
 import ScrollToTop from "./components/ScrollToTop";
+import BarbersSection from "./components/BarberSection";
 
 function App() {
   const { theme } = useTheme();
@@ -61,6 +62,7 @@ function App() {
       <GallerySection />
       <TestimonialsSection />
       <AboutSection />
+      <BarbersSection />
       <PricingSection />
       <BookingSection />
       <FAQSection />
