@@ -1,54 +1,45 @@
-# React + TypeScript + Vite
+# ✂️ PMC Barbershop Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive website for **PMC Barbershop** built using **React**, **TypeScript**, and **Tailwind CSS**. It features smooth animations, responsive layouts, dynamic testimonial carousels, a location section with an embedded Google Map, and a clean, accessible design.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 💈 Stylish and professional barbershop UI  
+- 📱 Fully responsive design for mobile, tablet, and desktop  
+- 🧾 Dynamic testimonials with auto-sliding carousel  
+- 📍 Google Maps embedded for location visibility  
+- 🌙 Dark mode support  
+- 🧼 Clean code structure using reusable components  
 
-## Expanding the ESLint configuration
+## 🌐 Live Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+👉 [Visit the website](https://barbershop-pmc.vercel.app)  
+>
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Tech Stack
+
+- **Framework**: React
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: CSS transitions
+
+## 📦 Installation
+
+1. **Clone the repository**  
+
+```bash
+git clone https://github.com/ay690/Barbershop-pmc.git
+cd Barbershop-pmc
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Install dependencies** 
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm install
+```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+3. **Run the development server**
+
+```bash
+npm run dev
 ```
