@@ -3,6 +3,7 @@ import { useTheme } from "./context/ThemeContext";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import ServicesSection from "./components/Services";
+import GallerySection from "./components/Gallery";
 
 function App() {
   const { theme } = useTheme();
@@ -49,6 +50,7 @@ function App() {
       <Header />
       <HeroSection />
       <ServicesSection />
+      <GallerySection />
     </>
   );
 }
